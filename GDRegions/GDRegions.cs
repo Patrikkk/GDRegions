@@ -101,7 +101,7 @@ namespace GDRegions
 				return;
 			}
 
-			if (TShock.Regions.AddRegion(startX, startY, (endX - startX), (endY - startY), rname, plr.User.Name, Main.worldID.ToString()))
+			if (TShock.Regions.AddRegion(startX, startY, (endX - startX), (endY - startY), rname, plr.Account.Name, Main.worldID.ToString()))
 				plr.SendSuccessMessage("Set region " + rname);
 			else
 				plr.SendErrorMessage($"Region {rname} already exists.");
